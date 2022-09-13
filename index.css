@@ -29,7 +29,7 @@ header {
   border-bottom: 1px red solid;
   box-shadow: 0px 0px 15px -4px red;
 }
-
+/* HERE ARE NAVBAR ----------------------------------------------------------------------------------------- */
 .nav_links {
   display: flex;
   flex-direction: row;
@@ -65,12 +65,80 @@ header {
 }
 
 .nav_links li:hover .nav_links2 {
-  display: inline-flex;
+  display: flex;
   position: absolute;
 
-  top: 100%;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  top: 101%;
+}
+.nav_links li:hover .nav_links2 ul {
+  display: flex;
+  flex-direction: row;
   background-color: #1a0714;
 }
 .nav_links li a {
   text-align: center;
+}
+/* NAVBAR ON TOP ----------------------------------------------------------------------------------------------*/
+
+h1 {
+  margin: auto;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  background: transparent;
+  border-bottom: 1px red solid;
+  /* box-shadow: 0px 0px 15px -4px red; */
+  width: 300px;
+}
+
+.container {
+  padding: 2rem;
+}
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  animation: 20s slider infinite;
+  border-top: 2px red solid;
+  border-bottom: 2px red solid;
+  box-shadow: 0px 0px 15px -4px red;
+}
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.2rem;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 00.5rem;
+  height: 00.5rem;
+  border-radius: 50%;
+  background-color: aliceblue;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+.slider-nav a:hover {
+  opacity: 1;
 }
