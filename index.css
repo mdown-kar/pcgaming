@@ -1,0 +1,76 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Bebas Neue", cursive;
+}
+body {
+  background: url(img/WallpaperDog-10794384.png);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo {
+  height: 70px;
+  cursor: pointer;
+  padding: 0px;
+  padding-left: 50px;
+  margin: 0px;
+  /* border: 3px white solid; */
+}
+
+a {
+  color: rgb(209, 215, 215);
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1a0714;
+  border-bottom: 1px red solid;
+  box-shadow: 0px 0px 15px -4px red;
+}
+
+.nav_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.nav_links li {
+  position: relative;
+
+  list-style: none;
+  display: flex;
+
+  flex-direction: column;
+  padding: 10px 30px;
+  padding-top: 10px;
+  justify-content: center;
+}
+.nav_links li:hover {
+  background-color: black;
+  border-radius: 10%;
+  color: red;
+}
+.nav_links li:hover > a {
+  color: red;
+}
+.search {
+  margin: 20px 10px;
+}
+.nav_links2 img {
+  width: 50px;
+}
+.nav_links2 {
+  display: none;
+}
+
+.nav_links li:hover .nav_links2 {
+  display: inline-flex;
+  position: absolute;
+
+  top: 100%;
+  background-color: #1a0714;
+}
+.nav_links li a {
+  text-align: center;
+}
