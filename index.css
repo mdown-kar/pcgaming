@@ -58,7 +58,7 @@ header {
   margin: 20px 10px;
 }
 .nav_links2 img {
-  width: 50px;
+  width: 2rem;
 }
 .nav_links2 {
   display: none;
@@ -67,7 +67,6 @@ header {
 .nav_links li:hover .nav_links2 {
   display: flex;
   position: absolute;
-
   justify-content: center;
   left: 0;
   right: 0;
@@ -82,19 +81,33 @@ header {
   text-align: center;
 }
 /* NAVBAR ON TOP ----------------------------------------------------------------------------------------------*/
+.bestSells {
+  margin: auto;
+  text-align: center;
+  background-color: #1a0714;
 
-h1 {
+  margin-bottom: 2rem;
+  border: 1px rgba(242, 241, 241, 0.079) solid;
+}
+.bestSells p {
+  width: 70%;
+  margin: auto;
+}
+.bestSells h1 {
   margin: auto;
   color: white;
   text-align: center;
   font-size: 50px;
-  background: transparent;
-  border-bottom: 1px red solid;
+
   /* box-shadow: 0px 0px 15px -4px red; */
   width: 300px;
 }
-
-.container {
+.quote {
+  background-color: rgba(168, 219, 219, 0.511);
+  text-align: center;
+  color: #99f00e;
+}
+/* .container {
   padding: 2rem;
 }
 .slider-wrapper {
@@ -141,4 +154,88 @@ h1 {
 }
 .slider-nav a:hover {
   opacity: 1;
+} */
+.container {
+  padding-top: 5px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  /* border: 2px white solid; */
+  max-width: 80rem;
+  height: 25rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.container div {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 10px -2px red;
+  border-bottom: 2px red solid;
+  background-color: #1a0714;
+}
+.container div img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.container,
+.sales div h4,
+p {
+  color: rgb(209, 215, 215);
+  /* background-color: #1a0714; */
+}
+.container div a {
+  color: rgb(31, 249, 31);
+}
+.sales div a {
+  color: rgb(31, 249, 31);
+}
+.sales {
+  padding-top: 5px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  /* border: 2px white solid; */
+  max-width: 80rem;
+  height: 50rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.sales div {
+  width: 30%;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 10px -2px red;
+  border-bottom: 2px red solid;
+  background-color: #1a0714;
+}
+.sales div img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+footer {
+  height: 20rem;
+  background-color: #1a0714;
+}
+.footer {
+  margin: auto;
+  display: flex;
+  width: 60rem;
+
+  justify-content: space-between;
+}
+.footer div {
+  border: 2px wheat solid;
+  color: aliceblue;
+}
+span {
+  text-decoration: underline;
 }
