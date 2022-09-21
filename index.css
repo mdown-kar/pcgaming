@@ -23,8 +23,10 @@ a {
   text-decoration: none;
 }
 header {
+  margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: #1a0714;
   border-bottom: 1px red solid;
   box-shadow: 0px 0px 15px -4px red;
@@ -45,11 +47,15 @@ header {
   padding: 10px 30px;
   padding-top: 10px;
   justify-content: center;
+  transition: background-color 0.5s ease-out, border-radius 0.5s ease-out;
+}
+.nav_links li > a {
+  color: aliceblue;
+  transition: color 0.5s ease-out;
 }
 .nav_links li:hover {
-  background-color: black;
-  border-radius: 10%;
-  color: red;
+  background-color: rgba(218, 217, 217, 0.202);
+  border-radius: 20%;
 }
 .nav_links li:hover > a {
   color: red;
@@ -72,6 +78,7 @@ header {
   right: 0;
   top: 101%;
 }
+
 .nav_links li:hover .nav_links2 ul {
   display: flex;
   flex-direction: row;
@@ -168,6 +175,7 @@ header {
   margin-bottom: 2rem;
 }
 .container div {
+  padding: 5px;
   width: 30%;
   height: 100%;
   display: flex;
@@ -207,6 +215,7 @@ p {
   flex-wrap: wrap;
 }
 .sales div {
+  padding: 5px;
   width: 30%;
   margin-bottom: 1rem;
   display: flex;
@@ -222,20 +231,56 @@ p {
   margin-bottom: 0px;
 }
 footer {
-  height: 20rem;
+  display: flex;
+
+  height: 15rem;
   background-color: #1a0714;
 }
 .footer {
   margin: auto;
   display: flex;
   width: 60rem;
-
   justify-content: space-between;
 }
-.footer div {
-  border: 2px wheat solid;
+.footer > div {
   color: aliceblue;
+  width: 20%;
+
+  height: 10rem;
+}
+.footer div ul li {
+  padding: 6px;
+  font-size: 10px;
+  font: 100;
 }
 span {
   text-decoration: underline;
+}
+.footer .mini-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.footer .mini-logo label {
+  text-align: center;
+  width: 10rem;
+}
+.footer .mini-logo .img {
+  width: 3rem;
+  height: 3rem;
+  margin: 5px;
+}
+
+.footer .mini-logo .img img {
+  width: 100%;
+  height: 100%;
+}
+.under-footer {
+  background-color: #1a0714;
+  border-top: 1px rgba(255, 255, 255, 0.092) solid;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
